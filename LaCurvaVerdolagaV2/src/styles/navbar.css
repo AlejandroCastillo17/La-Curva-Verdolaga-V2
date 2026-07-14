@@ -16,6 +16,7 @@
   align-items: center;
   background-color: #ffffff;
   border-bottom: 0.2rem solid var(--color-primario);
+  padding: 0.4rem 0 0 0;
 }
 
 .contenedor_principal::after {
@@ -139,7 +140,7 @@
 }
 .principal_logo img {
   width: 20rem;
-  height: 4.4rem;
+  height: 5rem;
 }
 
 .icono_buscar {

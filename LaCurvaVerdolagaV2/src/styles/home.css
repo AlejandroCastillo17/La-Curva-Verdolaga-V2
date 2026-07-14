@@ -6,13 +6,6 @@
   --color-neutro: #eceff1;
   --fuente-nav: "BEBAS NEUE", sans-serif;
 }
-.contenedor_principal_incio {
-  background-image: url(../assets/img/incioFondo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 0.1rem;
-}
 .trofeo_wrapper {
   width: 100%;
   max-width: 10rem;
@@ -38,6 +31,11 @@
   justify-content: center;
   justify-content: center;
   height: 35rem;
+  background-image: url(../assets/img/incioFondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0.1rem;
 }
 .content_info {
   display: flex;
@@ -50,14 +48,19 @@
   flex-direction: column;
   width: 60%;
 }
-
+.content_labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 32rem;
+}
 .content_labels h5 {
   color: white;
 }
 .labels_texto {
   font-family: "Bebas Neue";
-  font-weight: 700;
-  font-size: 3rem;
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 .labels_texto :first-child {
   color: white;
@@ -90,4 +93,220 @@
   border: 0.1rem white solid;
   padding: 0 2rem;
   color: white;
+}
+.inicio_secciones {
+  background-color: white;
+  min-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 4rem 2rem 4rem 2rem;
+}
+
+.secciones_contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3rem;
+}
+
+.header_title {
+  position: relative;
+  font-family: var(--fuente-nav);
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.header_title::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0.5rem;
+  top: 0;
+  left: 0;
+  background-color: #00843d;
+}
+
+.contenedor_contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contenido_seccion {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 2rem 2rem 0 2rem;
+  gap: 2rem;
+  background-color: var(--color-primario);
+  width: 23.75rem;
+  height: 15rem;
+  transition: transform 0.4s ease;
+}
+.contenido_seccion:hover {
+  transform: translate(0.5rem, -0.5rem);
+}
+
+.seccion_title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: white;
+}
+.seccion_title::after {
+  margin-top: 1rem;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: -3rem;
+  background-color: #f9a825;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+.contenido_seccion:hover .seccion_title::after {
+  transform: scaleX(1);
+}
+.seccion_title p {
+  font-family: var(--fuente-nav);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.seccion_title span {
+  color: rgb(110, 230, 110);
+  font-size: 0.875rem;
+  font-family: "Open Sans";
+}
+
+.historia {
+  background-color: #006d31;
+}
+.historia span {
+  color: #ffffff;
+  opacity: 90%;
+}
+.leyendas {
+  font-family: var(--fuente-nav);
+  background-color: #1a1a1a;
+}
+.leyendas span {
+  color: #d1d5db;
+}
+.galeria {
+  background-color: #00843d;
+}
+.galeria span {
+  color: #ffffff;
+  opacity: 90%;
+}
+.comunidad {
+  background-color: #6b6b6b;
+}
+.comunidad span {
+  color: #f3f4f6;
+}
+.podcast {
+  background-color: #7a4b00;
+}
+.podcast span {
+  color: #ffedd5;
+}
+.tributos {
+  background-color: #004d22;
+}
+
+.seccion_icono_fondo {
+  position: absolute;
+  bottom: -1rem;
+  right: -1.5rem;
+  opacity: 0.12;
+  pointer-events: none;
+}
+.contendor_carrusel {
+  background-color: #f7fafc;
+  padding: 2rem 2rem 4rem 2rem;
+}
+.contenedor_marco_carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 20rem;
+  overflow: hidden;
+  background-color: #f7fafc;
+}
+.carrusel_cabecera {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cabecera_titulo {
+  position: relative;
+  padding: 0 0 0 1rem;
+}
+
+.cabecera_titulo::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0.5rem;
+  top: 0;
+  left: 0;
+  background-color: #00843d;
+}
+.carrusel_pista {
+  display: flex;
+  flex-direction: row;
+  max-height: 20rem;
+  gap: 0.5rem;
+  position: relative;
+  align-items: center;
+}
+.pista_img {
+  flex: 0 0 calc((100% - 2 * 0.5rem) / 3);
+}
+.pista_img img {
+  width: 100%;
+  height: 100%;
+}
+.carrusel_buttons {
+  border-radius: 50%;
+  height: 2.9rem;
+  width: 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgba(245, 239, 239, 0.772);
+  backdrop-filter: blur(1rem);
+  color: var(--color-primario);
+  transition: transform 0.4s ease;
+}
+.carrusel_buttons:hover {
+  transform: translateY(-0.2rem);
+  background: rgba(71, 219, 17, 0.772);
+  color: white;
+}
+.afterButton {
+  position: absolute;
+  right: 0;
+  margin-right: 0.5rem;
+  z-index: 20000;
+}
+.beforeButton {
+  position: absolute;
+  left: 0;
+  margin-left: 0.5rem;
 }
