@@ -424,6 +424,30 @@ const Inicio = () => {
             </button>
           </div>
         </div>
+        {/*
+        <div className="inicio_suscripcion">
+          <div className="suscripcion_contenedor">
+            <div className="contenedor_contenidoS">
+              <h1>Sé parte de la historia</h1>
+              <p>
+                Recibe noticias exclusivas, preventas de boletería y contenido
+                histórico directamente en tu correo.
+              </p>
+              
+              <div className="Contenido_input">
+                <input
+                  className="input_input"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Tu correo electronico"
+                />
+                <button> SUSCRIBIRME </button>
+              </div>
+            </div>
+          </div>
+        </div> */}
+       
       </div>
     </>
   );

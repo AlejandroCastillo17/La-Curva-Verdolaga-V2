@@ -296,7 +296,7 @@
 }
 .carrusel_buttons:hover {
   transform: translateY(-0.2rem);
-  background: rgba(71, 219, 17, 0.772);
+  background: var(--color-primario);
   color: white;
 }
 .afterButton {
@@ -310,3 +310,60 @@
   left: 0;
   margin-left: 0.5rem;
 }
+/*
+.inicio_suscripcion {
+  background-color: white;
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suscripcion_contenedor {
+  background-color: #006d31;
+  width: 85%;
+  height: 20rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.contenedor_contenidoS {
+  text-transform: uppercase;
+  font-family: var(--fuente-nav);
+  max-width: 40rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Contenido_input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Contenido_input button {
+  color: white;
+  background-color: black;
+  padding: 0.9rem 2rem;
+  border: none;
+}
+
+.input_input {
+  border: none;
+  padding: 0.9rem 3rem 0.9rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: rgb(216, 216, 216) 0.1rem solid;
+}
+.input_input::placeholder {
+  color: rgb(216, 216, 216);
+}
+
+*/
