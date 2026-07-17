@@ -7,7 +7,7 @@
   --fuente-nav: "BEBAS NEUE", sans-serif;
 }
 .contenedor_principal_incio {
-  background-image: url(../assets/img/incioFondo.png);
+  background-image: url(../assets/img/Componentes/incioFondo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
