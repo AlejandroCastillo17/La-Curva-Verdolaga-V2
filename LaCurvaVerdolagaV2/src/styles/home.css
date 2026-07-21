@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 32rem;
+  min-width: 28.9rem;
 }
 .content_labels h5 {
   color: white;
@@ -148,7 +148,7 @@
   padding: 2rem 2rem 0 2rem;
   gap: 2rem;
   background-color: var(--color-primario);
-  width: 23.75rem;
+  width: 22.75rem;
   height: 15rem;
   transition: transform 0.4s ease;
 }

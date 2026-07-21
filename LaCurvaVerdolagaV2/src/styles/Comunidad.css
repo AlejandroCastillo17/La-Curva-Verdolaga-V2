@@ -1,0 +1,71 @@
+:root {
+  /* Colores principales */
+  --color-primario: #00843d;
+  --color-secundario: #f9a825;
+  --color-terciario: #1a1a1a;
+  --color-neutro: #eceff1;
+  --fuente-nav: "BEBAS NEUE";
+}
+
+.contenedor_principal_comunidad {
+  background-color: white;
+  width: 100%;
+  padding: 2rem;
+}
+/*contenedor de cabecera de pagina*/
+.comunidad_cabecera {
+  padding: 0rem 0rem 2rem 0rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.comunidad_cabecera h1 {
+  color: rgb(14, 117, 14);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: -0.3rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  margin: 1rem 0rem;
+}
+
+.comunidad_cabecera p {
+  max-width: 65%;
+  font-size: 1.4rem;
+}
+
+.comunidad_contenido {
+  background-color: rgb(181, 180, 180);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: 50rem;
+}
+
+.contenido_foro {
+  background-color: var(--color-neutro);
+  width: 70%;
+}
+
+.foro_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-bottom: var(--color-primario) 0.2rem solid;
+  color: var(--color-primario);
+  width: 12rem;
+}
+.header_icon button {
+  border: none;
+  text-transform: uppercase;
+}
