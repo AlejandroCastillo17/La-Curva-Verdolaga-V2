@@ -37,15 +37,12 @@
 }
 
 .comunidad_contenido {
-  background-color: rgb(181, 180, 180);
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  height: 50rem;
 }
 
 .contenido_foro {
-  background-color: var(--color-neutro);
   width: 70%;
 }
 
@@ -54,8 +51,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-bottom: rgb(214, 214, 214) 0.1rem solid;
+  margin-top: 4rem;
 }
-
+.foro_header h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
 .header_icon {
   display: flex;
   align-items: center;
@@ -68,4 +73,111 @@
 .header_icon button {
   border: none;
   text-transform: uppercase;
+  background-color: transparent;
+}
+.header_icon:hover,
+.header_icon button:hover {
+  transform: scale(1.01);
+  color: var(--color-primario);
+  cursor: pointer;
+}
+.foro_publicaciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+.publicaciones_publicacion {
+  display: flex;
+  flex-direction: row;
+  height: 22rem;
+  border: rgb(166, 164, 164) 0.1rem solid;
+  border-left: none;
+  width: 100%;
+}
+.publicaciones_img1 {
+  height: 100%;
+  flex: 0 0 35%;
+  background-image: url(../assets/img/ComunidadImage/img1C.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.publicaciones_img2 {
+  height: 100%;
+  flex: 0 0 35%;
+  background-image: url(../assets/img/ComunidadImage/img2C.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.publicaciones_contenido {
+  flex: 1 1 auto;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.contenido_etiquetas {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.etiquetas_etiqueta {
+  background-color: var(--color-primario);
+  padding: 0.5rem;
+  color: white;
+  font-family: var(--fuente-nav);
+}
+.contenido_etiquetas div {
+  display: flex;
+  gap: 0.7rem;
+  font-style: italic;
+  color: var(--color-primario);
+}
+.etiquetas_info {
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: rgb(189, 189, 189) 0.1rem solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.etiquetas_info h1 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2rem;
+  letter-spacing: -0.1rem;
+}
+.info_user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 0;
+}
+.info_user_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+}
+.info_user_icon span {
+  background-color: rgb(172, 172, 172);
+  padding: 0.2rem 0.3rem;
+  border-radius: 50%;
+}
+.user_options {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.options_option {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
 }
