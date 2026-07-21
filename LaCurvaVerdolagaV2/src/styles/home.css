@@ -6,6 +6,13 @@
   --color-neutro: #eceff1;
   --fuente-nav: "BEBAS NEUE", sans-serif;
 }
+.contenedor_principal_incio {
+  background-image: url(../assets/img/Componentes/incioFondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0.1rem;
+}
 .trofeo_wrapper {
   width: 100%;
   max-width: 10rem;
