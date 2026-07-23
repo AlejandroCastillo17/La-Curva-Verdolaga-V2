@@ -1,5 +1,34 @@
 import "../styles/Comunidad.css";
+import { useState } from "react";
+
 const Comunidad = () => {
+  const [contador, setContador] = useState(27);
+  const [estado, setEstado] = useState(true);
+  const [seleccionada, setSeleccionada] = useState(null);
+  const respuestaCorrecta = "A";
+
+  const cambiarConteo = () => {
+    if (estado) {
+      setContador(contador + 1);
+    } else {
+      setContador(contador - 1);
+    }
+    setEstado(!estado);
+  };
+
+  const seleccionarOpcion = (opcion) => {
+    if (seleccionada) return;
+    setSeleccionada(opcion);
+    cambiarConteo();
+  };
+
+  const getClaseOpcion = (opcion) => {
+    if (!seleccionada) return "options_optionT";
+    if (opcion === respuestaCorrecta) return "options_optionT opcion_correcta";
+    if (opcion === seleccionada) return "options_optionT opcion_incorrecta";
+    return "options_optionT";
+  };
+
   return (
     <>
       <div className="contenedor_principal_comunidad">
@@ -180,7 +209,55 @@ const Comunidad = () => {
               </div>
             </div>
           </div>
-          <div className="contenido_extras"></div>
+          <div className="contenido_extras">
+            <div className="extras_trivia">
+              <div className="trivia_titulo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#f9d400"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 4v3m-4 -3v6m8 -6v6" />
+                  <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" />
+                </svg>
+                <h1>TRIVIA VERDOLAGA</h1>
+              </div>
+              <p>
+                ¿Quién anotó el gol decisivo en la final de la Libertadores
+                2016?
+              </p>
+              <div className="trivia_options">
+                <div
+                  className={getClaseOpcion("A")}
+                  onClick={() => seleccionarOpcion("A")}
+                >
+                  <p>A.MIGUEL BORJA</p>
+                </div>
+                <div
+                  className={getClaseOpcion("B")}
+                  onClick={() => seleccionarOpcion("B")}
+                >
+                  <p>B.MACNELLY TORRES</p>
+                </div>
+                <div
+                  className={getClaseOpcion("C")}
+                  onClick={() => seleccionarOpcion("C")}
+                >
+                  <p>C.ORLANDO BERRIO</p>
+                </div>
+              </div>
+              <div className="trivia_participantes">
+                <p>Participantes:</p> <span> {contador} </span>
+              </div>
+            </div>
+            <div className="extras_hinchas"></div>
+          </div>
         </section>
       </div>
     </>
